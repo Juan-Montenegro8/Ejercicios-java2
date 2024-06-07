@@ -5,18 +5,20 @@ import java.util.Scanner;
 public class SegundoEje {
 
     public static void main(String[] args) {
-        Scanner t=new Scanner(System.in);
+        Scanner textoScanner=new Scanner(System.in);
         
         System.out.println("escriba el numero");
-        int num1=t.nextInt();
+        int numero1=textoScanner.nextInt();
         System.out.println("escriba el numero");
-        int num2=t.nextInt();
+        int numero2=textoScanner.nextInt();
         
-        if(num1!=num2){
-            int sum = num1+num2;
-            int mul = num1*num2;
+        if(numero1!=numero2){
+            int sum = numero1+numero2;
+            int mul = numero1*numero2;
             System.out.println("la suma es "+sum);
             System.out.println("la multiplicacion es "+mul);
+        }else{
+            System.out.println("los numeros son iguales");
         }
     }
     
