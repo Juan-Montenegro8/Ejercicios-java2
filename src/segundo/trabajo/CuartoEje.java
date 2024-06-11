@@ -5,27 +5,27 @@ import java.util.Scanner;
 public class CuartoEje {
 
     public static void main(String[] args) {
-        Scanner t=new Scanner(System.in);
+        Scanner textoScanner=new Scanner(System.in);
         
         System.out.println("Precio por hora");
-        double ph=t.nextDouble();
+        double PrecioHora=textoScanner.nextDouble();
         System.out.println("horas trabajada");
-        double ht=t.nextDouble();
+        double HoraTrabjada=textoScanner.nextDouble();
         System.out.println("horas extras");
-        double hx=t.nextDouble();
+        double HorasExtra=textoScanner.nextDouble();
         
-        double vp=ph*ht;
-        double ex=ph*hx;
-        double tota=vp+ex;
+        double ValorHora=PrecioHora*HoraTrabjada;
+        double ValorExtra=PrecioHora*HorasExtra;
+        double total=ValorHora+ValorExtra;
         
-        if(tota<=500000){
-            double jj=tota*0.03;
-            double total=tota-jj;
-            System.out.println("el salario es de "+total);
+        if(total<=500000){
+            double descuento=total*0.03;
+            double Pagar=total-descuento;
+            System.out.println("el salario es de "+Pagar);
         }else{
-            double jj=tota*0.05;
-            double total=tota-jj;
-            System.out.println("el salario es de "+total);
+            double descuento=total*0.05;
+            double Pagar=total-descuento;
+            System.out.println("el salario es de "+Pagar);
         }
         
     }
