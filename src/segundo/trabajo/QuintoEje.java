@@ -5,12 +5,12 @@ import java.util.Scanner;
 public class QuintoEje {
 
     public static void main(String[] args) {
-        Scanner t= new Scanner(System.in);
+        Scanner textScanner= new Scanner(System.in);
         
         System.out.println("ingrese un numero");
-        int nu1=t.nextInt();
+        int nu1=textScanner.nextInt();
         System.out.println("ingrese un numero");
-        int nu2=t.nextInt();
+        int nu2=textScanner.nextInt();
         
         if(nu1==nu2){
             int re=nu1+nu2;
