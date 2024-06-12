@@ -8,16 +8,16 @@ public class QuintoEje {
         Scanner textScanner= new Scanner(System.in);
         
         System.out.println("ingrese un numero");
-        int nu1=textScanner.nextInt();
+        int numero1=textScanner.nextInt();
         System.out.println("ingrese un numero");
-        int nu2=textScanner.nextInt();
+        int numero2=textScanner.nextInt();
         
-        if(nu1==nu2){
-            int re=nu1+nu2;
-            System.out.println("la suma es "+re);
+        if(numero1==numero2){
+            int suma=numero1+numero2;
+            System.out.println("la suma es "+suma);
         }else{
-            int re=nu1-nu2;
-            System.out.println("la diferencia es "+re);
+            int resta=numero1-numero2;
+            System.out.println("la diferencia es "+resta);
         }
     }
     
