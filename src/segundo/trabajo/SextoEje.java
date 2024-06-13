@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class SextoEje {
 
     public static void main(String[] args) {
-        Scanner t=new Scanner(System.in);
+        Scanner textoScanner=new Scanner(System.in);
         
         System.out.println("ingrese numero");
-        double nu=t.nextDouble();
+        double nu=textoScanner.nextDouble();
         
         if(nu>=0){
             double rai=Math.sqrt(nu);
