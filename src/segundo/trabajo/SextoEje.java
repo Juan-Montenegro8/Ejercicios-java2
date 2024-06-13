@@ -8,11 +8,11 @@ public class SextoEje {
         Scanner textoScanner=new Scanner(System.in);
         
         System.out.println("ingrese numero");
-        double nu=textoScanner.nextDouble();
+        double numero=textoScanner.nextDouble();
         
-        if(nu>=0){
-            double rai=Math.sqrt(nu);
-            System.out.println("la raiz del numero es "+rai);
+        if(numero>=0){
+            double raiz=Math.sqrt(numero);
+            System.out.println("la raiz del numero es "+raiz);
         }else{
             System.out.println("no tiene raiz");
         }
