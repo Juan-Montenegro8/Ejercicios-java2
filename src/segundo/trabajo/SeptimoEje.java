@@ -8,18 +8,18 @@ public class SeptimoEje {
         Scanner textoScanner=new Scanner(System.in);
         
         System.out.println("ingrese un numero");
-        int n1=textoScanner.nextInt();
+        int numero1=textoScanner.nextInt();
         System.out.println("ingrese un numero");
-        int n2=textoScanner.nextInt();
+        int numero2=textoScanner.nextInt();
         
-        if(n1>=0 && n2<=0){
-            System.out.println("el numero "+n1+" es positivo");
+        if(numero1>=0 && numero2<=0){
+            System.out.println("el numero "+numero1+" es positivo");
         }else{
-            if(n1>=0 && n2>=0){
-                System.out.println("los numeros "+n1+" y "+n2+" son positivos");
+            if(numero1>=0 && numero2>=0){
+                System.out.println("los numeros "+numero1+" y "+numero2+" son positivos");
             }else{
-                if(n1<=0 && n2>=0){
-                    System.out.println("el numero "+n2+" es positivo");
+                if(numero1<=0 && numero2>=0){
+                    System.out.println("el numero "+numero2+" es positivo");
                 }else{
                     System.out.println("no hay numeros positivos");
                 }
