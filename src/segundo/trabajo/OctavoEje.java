@@ -8,9 +8,9 @@ public class OctavoEje {
         Scanner textoScanner=new Scanner(System.in);
         
         System.out.println("escriba un caracter");
-        char letra=textoScanner.next().charAt(0);
+        char caracter=textoScanner.next().charAt(0);
         
-        if(Character.isUpperCase(letra)){
+        if(Character.isUpperCase(caracter)){
             System.out.println("Mayuscula");
         }else{
             System.out.println("Minuscula");
