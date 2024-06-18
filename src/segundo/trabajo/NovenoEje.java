@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class NovenoEje {
 
     public static void main(String[] args) {
-        Scanner t=new Scanner(System.in);
+        Scanner textoScanner=new Scanner(System.in);
         
         System.out.println("ingrese la nota final");
-        double f=t.nextDouble();
+        double f=textoScanner.nextDouble();
         
         if(f>=0 && f<=5){
             if(f>=3){
