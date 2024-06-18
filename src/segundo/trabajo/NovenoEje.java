@@ -8,10 +8,10 @@ public class NovenoEje {
         Scanner textoScanner=new Scanner(System.in);
         
         System.out.println("ingrese la nota final");
-        double f=textoScanner.nextDouble();
+        double nota=textoScanner.nextDouble();
         
-        if(f>=0 && f<=5){
-            if(f>=3){
+        if(nota>=0 && nota<=5){
+            if(nota>=3){
                 System.out.println("paso la materia");
             }else{
                 System.out.println("perdio la metia");
