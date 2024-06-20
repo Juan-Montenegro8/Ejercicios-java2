@@ -5,12 +5,12 @@ import java.util.Scanner;
 public class DecimoEje {
 
     public static void main(String[] args) {
-        Scanner t=new Scanner(System.in);
+        Scanner textoScanner=new Scanner(System.in);
         
         System.out.println("ingrese un numero");
-        int n1=t.nextInt();
+        int n1=textoScanner.nextInt();
         System.out.println("ingrese un numero");
-        int n2=t.nextInt();
+        int n2=textoScanner.nextInt();
         
         if(n1<n2){
             System.out.println(n2+" es mayor que "+n1);
