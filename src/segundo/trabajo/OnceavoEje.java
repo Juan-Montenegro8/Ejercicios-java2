@@ -5,18 +5,18 @@ import java.util.Scanner;
 public class OnceavoEje {
 
     public static void main(String[] args) {
-        Scanner t=new Scanner(System.in);
+        Scanner textoScanner=new Scanner(System.in);
         
         System.out.println("si el triangulo es rectangulo digite 1");
         System.out.println("sino digite 2");
-        int rec=t.nextInt();
+        int rec=textoScanner.nextInt();
         
         switch (rec) {
             case 1:                
                 System.out.println("ingrese base");
-                double b=t.nextDouble();
+                double b=textoScanner.nextDouble();
                 System.out.println("ingrese altura");
-                double a=t.nextDouble();
+                double a=textoScanner.nextDouble();
                 if(b>0 && a>0){
                     double area =(b*a)/2;
                     System.out.println("el area del triangulo "+area);
@@ -26,11 +26,11 @@ public class OnceavoEje {
                 break;
             case 2:
                 System.out.println("ingrese base");
-                double b1=t.nextDouble();
+                double b1=textoScanner.nextDouble();
                 System.out.println("ingrese cateto1");
-                double a1=t.nextDouble();
+                double a1=textoScanner.nextDouble();
                 System.out.println("ingrese cateto2");
-                double c=t.nextDouble();
+                double c=textoScanner.nextDouble();
                 
                 if(b1>0 && a1>0 && c>0){
                     double s=(a1+b1+c)/2;
