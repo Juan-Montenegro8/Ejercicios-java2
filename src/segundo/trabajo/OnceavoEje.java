@@ -9,16 +9,16 @@ public class OnceavoEje {
         
         System.out.println("si el triangulo es rectangulo digite 1");
         System.out.println("sino digite 2");
-        int rec=textoScanner.nextInt();
+        int rectangulo=textoScanner.nextInt();
         
-        switch (rec) {
+        switch (rectangulo) {
             case 1:                
                 System.out.println("ingrese base");
-                double b=textoScanner.nextDouble();
+                double base=textoScanner.nextDouble();
                 System.out.println("ingrese altura");
-                double a=textoScanner.nextDouble();
-                if(b>0 && a>0){
-                    double area =(b*a)/2;
+                double altura=textoScanner.nextDouble();
+                if(base>0 && altura>0){
+                    double area =(base*altura)/2;
                     System.out.println("el area del triangulo "+area);
                 }else{
                     System.out.println("no pueden ir numeros negativos o el 0");
