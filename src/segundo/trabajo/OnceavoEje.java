@@ -28,16 +28,17 @@ public class OnceavoEje {
                 System.out.println("ingrese base");
                 double base2=textoScanner.nextDouble();
                 System.out.println("ingrese cateto1");
-                double a1=textoScanner.nextDouble();
+                double cateto1=textoScanner.nextDouble();
                 System.out.println("ingrese cateto2");
-                double c=textoScanner.nextDouble();
+                double cateto2=textoScanner.nextDouble();
                 
-                if(base2>0 && a1>0 && c>0){
-                    double s=(a1+base2+c)/2;
-                    double rai=(s*(s-a1)*(s-base2)*(s-c));
-                    double area1 = Math.sqrt(rai);
+                if(base2>0 && cateto1>0 && cateto2>0){
+                    double semiperimetro =(cateto1+base2+cateto2)/2;
+                    double raiz=(semiperimetro*(semiperimetro-cateto1)*(semiperimetro-base2)*(semiperimetro-cateto2));
+                    //Cálculo del área usando la fórmula de Herón
+                    double area2 = Math.sqrt(raiz);
                 
-                    System.out.println("el area del triangulo "+area1);
+                    System.out.println("el area del triangulo "+area2);
                 }else{
                     System.out.println("no pueden ir numeros negativos o el 0");
                 }
