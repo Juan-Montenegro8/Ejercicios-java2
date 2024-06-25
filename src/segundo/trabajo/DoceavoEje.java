@@ -8,11 +8,11 @@ public class DoceavoEje {
         Scanner textoScanner=new Scanner(System.in);
         
         System.out.println("ingrese el caracter");
-        char letra=textoScanner.next().charAt(0);
+        char caracter=textoScanner.next().charAt(0);
         
-        if(letra=='a' || letra=='e' || letra=='i' || letra=='o' || letra=='u'
-                || letra=='A' || letra=='E' || letra=='I' || letra=='O' || letra=='U'){
-            if(Character.isUpperCase(letra)){
+        if(caracter=='a' || caracter=='e' || caracter=='i' || caracter=='o' || caracter=='u'
+                || caracter=='A' || caracter=='E' || caracter=='I' || caracter=='O' || caracter=='U'){
+            if(Character.isUpperCase(caracter)){
                 System.out.println("es una vocal mayuscula");
             }else{
                 System.out.println("es una vocal minuscula");
