@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class DoceavoEje {
 
     public static void main(String[] args) {
-        Scanner t=new Scanner(System.in);
+        Scanner textoScanner=new Scanner(System.in);
         
         System.out.println("ingrese el caracter");
-        char letra=t.next().charAt(0);
+        char letra=textoScanner.next().charAt(0);
         
         if(letra=='a' || letra=='e' || letra=='i' || letra=='o' || letra=='u'
                 || letra=='A' || letra=='E' || letra=='I' || letra=='O' || letra=='U'){
