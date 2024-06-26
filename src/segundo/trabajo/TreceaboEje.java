@@ -9,22 +9,22 @@ public class TreceaboEje {
         
         System.out.println("solucion de AX+B=0");
         System.out.println("ingrese valor de A");
-        double a=textoScanner.nextDouble();
+        double ValorA=textoScanner.nextDouble();
         System.out.println("ingrese valor de B");
-        double b=textoScanner.nextDouble();
+        double ValorB=textoScanner.nextDouble();
         
-        if(a!=0){
-            if((a>0 && b>=0)){
-                double res=-(b/a);
-                System.out.println("el resultado es "+res);
+        if(ValorA!=0){
+            if((ValorA>0 && ValorB>=0)){
+                double resultado=-(ValorB/ValorA);
+                System.out.println("el resultado es "+resultado);
             }else{
-                if((a<0 && b>=0) || (a>0 && b<0)){
-                    double res=-1*(b/a);
-                    System.out.println("el resultado es "+res);
+                if((ValorA<0 && ValorB>=0) || (ValorA>0 && ValorB<0)){
+                    double resultado=-1*(ValorB/ValorA);
+                    System.out.println("el resultado es "+resultado);
                 }else{
-                    if(a<0 && b<0){
-                        double res=(b/a);
-                        System.out.println("el resultado es "+res);
+                    if(ValorA<0 && ValorB<0){
+                        double resultado=(ValorB/ValorA);
+                        System.out.println("el resultado es "+resultado);
                     }
                 }
             }    
