@@ -5,13 +5,13 @@ import java.util.Scanner;
 public class TreceaboEje {
 
     public static void main(String[] args) {
-        Scanner t=new Scanner(System.in);
+        Scanner textoScanner=new Scanner(System.in);
         
         System.out.println("solucion de AX+B=0");
         System.out.println("ingrese valor de A");
-        double a=t.nextDouble();
+        double a=textoScanner.nextDouble();
         System.out.println("ingrese valor de B");
-        double b=t.nextDouble();
+        double b=textoScanner.nextDouble();
         
         if(a!=0){
             if((a>0 && b>=0)){
