@@ -5,15 +5,15 @@ import java.util.Scanner;
 public class CatorceaboEje {
 
     public static void main(String[] args) {
-        Scanner t=new Scanner(System.in);
+        Scanner textoScanner=new Scanner(System.in);
         
         System.out.println("resolver ax^2+bx+c=0");
         System.out.println("ingrese valor de a");
-        double a=t.nextDouble();
+        double a=textoScanner.nextDouble();
         System.out.println("ingrese valor de b");
-        double b=t.nextDouble();
+        double b=textoScanner.nextDouble();
         System.out.println("ingrese valor de c");
-        double c=t.nextDouble();
+        double c=textoScanner.nextDouble();
         
         if(a!=0 && b!=0){
             double pot=Math.pow(b, 2);
