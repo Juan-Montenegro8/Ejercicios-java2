@@ -9,21 +9,21 @@ public class CatorceaboEje {
         
         System.out.println("resolver ax^2+bx+c=0");
         System.out.println("ingrese valor de a");
-        double a=textoScanner.nextDouble();
+        double ValorA=textoScanner.nextDouble();
         System.out.println("ingrese valor de b");
-        double b=textoScanner.nextDouble();
+        double ValorB=textoScanner.nextDouble();
         System.out.println("ingrese valor de c");
-        double c=textoScanner.nextDouble();
+        double ValorC=textoScanner.nextDouble();
         
-        if(a!=0 && b!=0){
-            double pot=Math.pow(b, 2);
-            double jj1=pot-4*a*c;
-            if(jj1>=0){
-                double j=Math.sqrt(jj1);
-                double resul1=(-b+j)/2*a;
-                double resul2=(-b-j)/2*a;
-                System.out.println("resultado 1= "+resul1);
-                System.out.println("resultado 2= "+resul2);     
+        if(ValorA!=0 && ValorB!=0){
+            double potencia=Math.pow(ValorB, 2);
+            double Raiz=potencia-4*ValorA*ValorC;
+            if(Raiz>=0){
+                double ResultadoRaiz=Math.sqrt(Raiz);
+                double resultado1=(-ValorB+ResultadoRaiz)/2*ValorA;
+                double resultado2=(-ValorB-ResultadoRaiz)/2*ValorA;
+                System.out.println("resultado 1= "+resultado1);
+                System.out.println("resultado 2= "+resultado2);     
             }else{
                 System.out.println("no se le puede sacar raiz cuadrada numero negativo");
             }
