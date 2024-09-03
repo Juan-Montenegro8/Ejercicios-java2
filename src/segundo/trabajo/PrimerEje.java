@@ -5,16 +5,16 @@ import java.util.Scanner;
 public class PrimerEje {
 
     public static void main(String[] args) {
-        Scanner texto= new Scanner(System.in);
+        Scanner textoScanner = new Scanner(System.in);
         
         System.out.println("Escriba el nombre");
-        String nombre =  texto.nextLine();
+        String nombre =  textoScanner.nextLine();
         System.out.println("ingrese edad");
-        int edad = texto.nextInt();
+        int edad = textoScanner.nextInt();
         System.out.println("estado civil: ");
         System.out.println("0=soltero");
         System.out.println("1=casado");
-        int civil=texto.nextInt();
+        int civil=textoScanner.nextInt();
         
         if(edad>=18 && civil==0){
             System.out.println(""+nombre+" tiene "+edad+" años y esta soltero");
