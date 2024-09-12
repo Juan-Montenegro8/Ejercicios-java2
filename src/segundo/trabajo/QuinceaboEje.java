@@ -5,33 +5,33 @@ import java.util.Scanner;
 public class QuinceaboEje {
 
     public static void main(String[] args) {
-        Scanner t=new Scanner(System.in);
+        Scanner textoScanner=new Scanner(System.in);
         
         System.out.println("ingrese un numero");
-        int n1=t.nextInt();
+        int numero1=textoScanner.nextInt();
         System.out.println("ingrese un numero");
-        int n2=t.nextInt();
+        int numero2=textoScanner.nextInt();
         System.out.println("ingrese un numero");
-        int n3=t.nextInt();
+        int numero3=textoScanner.nextInt();
         
-        if(n1!=n2 && n2!=n3){
-            if(n1>n2 && n1>n3 && n2>n3){
-                System.out.println("de mayor a menor"+n1+" - "+n2+" - "+n3);
+        if(numero1!=numero2 && numero2!=numero3){
+            if(numero1>numero2 && numero1>numero3 && numero2>numero3){
+                System.out.println("de mayor a menor"+numero1+" - "+numero2+" - "+numero3);
             }else{
-                if(n1>n2 && n1>n3 && n3>n2){
-                    System.out.println("de mayor a menor"+n1+" - "+n3+" - "+n2);
+                if(numero1>numero2 && numero1>numero3 && numero3>numero2){
+                    System.out.println("de mayor a menor"+numero1+" - "+numero3+" - "+numero2);
                 }else{
-                    if(n2>n1 && n2>n3 && n1>n3){
-                        System.out.println("de mayor a menor"+n2+" - "+n1+" - "+n3);
+                    if(numero2>numero1 && numero2>numero3 && numero1>numero3){
+                        System.out.println("de mayor a menor"+numero2+" - "+numero1+" - "+numero3);
                     }else{
-                        if(n2>n1 && n2>n3 && n3>n1){
-                            System.out.println("de mayor a menor"+n2+" - "+n3+" - "+n1);
+                        if(numero2>numero1 && numero2>numero3 && numero3>numero1){
+                            System.out.println("de mayor a menor"+numero2+" - "+numero3+" - "+numero1);
                         }else{
-                            if(n3>n1 && n3>n2 && n1>n2){
-                                System.out.println("de mayor a menor"+n3+" - "+n1+" - "+n2);
+                            if(numero3>numero1 && numero3>numero2 && numero1>numero2){
+                                System.out.println("de mayor a menor"+numero3+" - "+numero1+" - "+numero2);
                             }else{
-                                if(n3>n1 && n3>n2 && n2>n1){
-                                    System.out.println("de mayor a menor"+n3+" - "+n2+" - "+n1);
+                                if(numero3>numero1 && numero3>numero2 && numero2>numero1){
+                                    System.out.println("de mayor a menor"+numero3+" - "+numero2+" - "+numero1);
                                 }
                             }
                         }
